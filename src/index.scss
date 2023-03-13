@@ -7,17 +7,32 @@
   font-family: 'Roboto', sans-serif;
 }
 
-.navbar {
-  margin-top: 1em;
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  'navbar navbar navbar navbar navbar'
+  'title title title title title'
+  'home-skills home-skills home-skills home-skills home-skills'
+  'home-skills home-skills home-skills home-skills home-skills'
+  'home-skills home-skills home-skills home-skills home-skills'
+  'home-skills home-skills home-skills home-skills home-skills'
+  'home-projects home-projects home-projects home-projects home-projects'
+  'home-projects home-projects home-projects home-projects home-projects'
+  'home-projects home-projects home-projects home-projects home-projects'
+  'home-projects home-projects home-projects home-projects home-projects';
 }
 
-.navbar {
+nav {
   display: flex;
+  grid-area: navbar;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
   padding: 0.5rem;
+  margin-top: 1em;
   .navbar-text {
     display: flex;
     gap: 4rem;
@@ -35,5 +50,104 @@
     img {
       height: 2.5rem;
     }
+  }
+}
+
+.title{
+  grid-area: title;
+  gap: 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-skills{
+  grid-area: home-skills;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.home-skills > p {
+  margin-top: 1rem;
+  font-size: 2rem;
+}
+
+.home-skill {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #61DBFB;
+  margin-top: 1rem;
+  padding: 0.5em;
+  border-radius: 1em;
+  width: 60%;
+  font-weight: 500;
+
+  p {
+    width: 15%;
+  }
+
+  img {
+    height: 1.5rem;
+  }
+}
+
+.javascript {
+  background-color: #f7df1e;
+}
+
+.sass {
+  background-color: #cc499c;
+}
+
+.accessibility {
+  background-color: #44CF6C;
+}
+
+.testing {
+  background-color: #FBC2B5;
+}
+
+.title-greeting {
+  display: inline-block;
+  margin-top: 0.2rem;
+  font-size: 4rem;
+  width: 300px;
+}
+
+.subtitle {
+  width: 70%;
+  font-size: 1.5rem;
+}
+
+.home-projects{
+  grid-area: home-projects;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+
+  .projects-subtitle {
+    margin-top: 2rem;
+  }
+}
+
+.blaze-slider {
+  display: flex;
+  margin-top: 1rem;
+
+  .blaze-track-container {
+    text-align: center;
+  }
+}
+
+.slide {
+
+  img {
+    margin-bottom: 1rem;
+    width: 20rem;
+    height: 10rem;
   }
 }
