@@ -24,7 +24,6 @@ export default function HomeSkills() {
         <p>Testing</p>
         <img src="./images/list-signs-svgrepo-com.svg" alt="Sass" />
       </div>
-      <p>...and much more!</p>
     </div>
   );
 }

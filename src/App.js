@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "./components/Footer";
 import HomeProjects from "./components/HomeProjects";
 import HomeSkills from "./components/HomeSkills";
 import Navbar from "./components/Navbar";
@@ -11,6 +12,7 @@ function App() {
       <Title />
       <HomeSkills />
       <HomeProjects />
+      <Footer />
     </div>
   );
 }

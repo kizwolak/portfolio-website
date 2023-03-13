@@ -7,12 +7,12 @@ export default function HomeProjects() {
     all: {
       enableAutoplay: true,
       stopAutoplayOnInteraction: false,
-      autoplayInterval: 1500,
+      autoplayInterval: 4000,
     },
   });
   return (
     <div className="home-projects">
-      <h2>Here is some stuff I've made:</h2>
+      <h2>And here is some stuff I've made:</h2>
       <div className="blaze-slider" ref={ref}>
         <div className="blaze-container">
           <div className="blaze-track-container">
@@ -46,6 +46,7 @@ export default function HomeProjects() {
         Please visit the Projects page on the navigation bar or check out my
         GitHub page to see what else I have been up to!
       </p>
+      <h3>Hope to hear from you soon!</h3>
     </div>
   );
 }
