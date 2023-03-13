@@ -4,7 +4,11 @@ import "blaze-slider/dist/blaze.css";
 
 export default function HomeProjects() {
   const ref = useBlazeSlider({
-    all: {},
+    all: {
+      enableAutoplay: true,
+      stopAutoplayOnInteraction: false,
+      autoplayInterval: 1500,
+    },
   });
   return (
     <div className="home-projects">
@@ -38,6 +42,10 @@ export default function HomeProjects() {
         </div>
       </div>
       <h2 className="projects-subtitle">And so much more!</h2>
+      <p className="projects-invitation">
+        Please visit the Projects page on the navigation bar or check out my
+        GitHub page to see what else I have been up to!
+      </p>
     </div>
   );
 }

@@ -130,13 +130,13 @@ nav {
   margin-top: 1rem;
 
   .projects-subtitle {
-    margin-top: 2rem;
+    margin-top: 2.5rem;
   }
 }
 
 .blaze-slider {
-  display: flex;
   margin-top: 1rem;
+  width: 100vw;
 
   .blaze-track-container {
     text-align: center;
@@ -144,10 +144,17 @@ nav {
 }
 
 .slide {
+  width: 5em;
 
   img {
     margin-bottom: 1rem;
-    width: 20rem;
-    height: 10rem;
+    width: 20em;
+    height: 10em;
   }
+}
+
+.projects-invitation {
+  margin-top: 1rem;
+  width: 80%;
+  font-size: 1.2rem;
 }
