@@ -47,6 +47,7 @@ nav {
   .navbar-img {
     display: flex;
     gap: 5rem;
+    animation: navbar-img-bounce 4s;
   }
   button {
     background-color: transparent;
@@ -58,6 +59,14 @@ nav {
       height: 2.5rem;
     }
   }
+}
+
+@keyframes navbar-img-bounce {
+  0% { transform: translateY(-20em) }
+  1% { transform: translateY(-20em) }
+  50%, 80%, 100% { transform: translateY(0); } 
+  70% { transform: translateY(-30px); } 
+  90% { transform: translateY(-15px); } 
 }
 
 .title{
