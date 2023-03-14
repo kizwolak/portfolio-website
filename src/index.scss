@@ -72,9 +72,9 @@ nav {
 }
 
 @keyframes navbar-img-bounce {
-  0% { transform: translateY(-20em) }
-  1% { transform: translateY(-20em) }
-  50% {transform: translateY(-20em) }
+  0% { transform: translateY(-20em); }
+  1% { transform: translateY(-20em); }
+  50% {transform: translateY(-20em); }
   60%, 80%, 100% { transform: translateY(0); } 
   70% { transform: translateY(-1em); } 
 }
@@ -115,8 +115,17 @@ nav {
   margin-top: 1rem;
 
   h1 {
-    animation: subtitle-fade-in 18s;
+    animation: skills-fade-in 18s;
   }
+}
+
+@keyframes skills-fade-in {
+  0%    { opacity: 0; }
+  20%    { opacity: 0; }
+  40%    { opacity: 0; }
+  50%     { opacity: 0 }
+  60%     { opacity: 0.9 }
+  65%    { opacity: 1 }
 }
 
 .home-skills > p {
@@ -128,7 +137,6 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #61DBFB;
   margin-top: 1rem;
   padding: 0.5em;
   border-radius: 1em;
@@ -144,20 +152,36 @@ nav {
   }
 }
 
+@keyframes homeskill-left-center {
+  0% { transform: translateX(-25em); }
+  1% { transform: translateX(-25em); }
+  50% { transform: translateX(-25em); }
+  55% { transform: translatex(0); } 
+}
+
+.react {
+  background-color: #61DBFB;
+  animation: homeskill-left-center 18s
+}
+
 .javascript {
   background-color: #f7df1e;
+  animation: homeskill-left-center 20s
 }
 
 .sass {
   background-color: #cc499c;
+  animation: homeskill-left-center 22s
 }
 
 .accessibility {
   background-color: #44CF6C;
+  animation: homeskill-left-center 24s
 }
 
 .testing {
   background-color: #FBC2B5;
+  animation: homeskill-left-center 26s
 }
 
 .title-greeting {
