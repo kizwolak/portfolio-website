@@ -12,14 +12,14 @@ body {
   // background-image: url('../public/images/new-background.png');
   // background-size: cover;
   // background-position: center;
-  background-color: #EAD94C;
+  background-color: #fada5e;
 }
 
 // colour candidates + for abstract shapes for background
 // 347FC4 steel blue, F9CFF2 mimi pink, F2545B indian red, A5C4D4 columbia blue, 
 // #F4D06F jasmine, 
 
-// best candidates: #EAD94C, #F4D06F, 
+// best candidates: #EAD94C, #F4D06F, #FF9F1C
 
 .main {
   display: grid;
@@ -241,6 +241,7 @@ nav {
   margin-bottom: 1rem;
   width: 80%;
   font-size: 1.2rem;
+  text-align: center;
 }
 
 footer {
