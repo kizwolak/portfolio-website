@@ -7,7 +7,7 @@ export default function HomeProjects() {
     all: {
       enableAutoplay: true,
       stopAutoplayOnInteraction: false,
-      autoplayInterval: 4000,
+      autoplayInterval: 7000,
     },
   });
   return (
@@ -31,7 +31,7 @@ export default function HomeProjects() {
               </div>
               <div className="slide">
                 <img src="./images/doctor.png" alt="Shop" />
-                <h4>A doctor's website (CSS flex)!</h4>
+                <h4>A doctor's website (a CSS flex)!</h4>
               </div>
               <div className="slide">
                 <img src="./images/memegen.png" alt="Shop" />
