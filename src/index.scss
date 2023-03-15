@@ -77,11 +77,11 @@ nav {
   animation: navbar-img-bounce 10s;
 }
 
-.img-bounce-1 {
+.img-bounce-2 {
   animation: navbar-img-bounce 12s;
 }
 
-.img-bounce-1 {
+.img-bounce-3 {
   animation: navbar-img-bounce 14s;
 }
 
@@ -156,6 +156,9 @@ nav {
   border-radius: 1em;
   width: 60%;
   font-weight: 500;
+  box-shadow: 3px 3px 2px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 3px 3px 2px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 3px 3px 2px 0px rgba(0,0,0,0.75);
 
   p {
     width: 15%;
@@ -239,6 +242,10 @@ nav {
     margin-bottom: 1rem;
     width: 20em;
     height: 10em;
+  }
+
+  p {
+    font-weight: 400;
   }
 }
 

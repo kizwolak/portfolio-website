@@ -1,0 +1,18 @@
+.projects-header {
+    text-align: center;
+    font-size: 1.7rem;
+    margin-top: 1rem;
+    margin-bottom: 1.2rem;
+}
+
+.hidden-project-group {
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+    max-height: 0;
+}
+
+.project-group-display {
+    transition: max-height 0.5s ease-out;
+    overflow: hidden;
+    max-height: 3rem;
+}

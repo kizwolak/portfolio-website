@@ -6,10 +6,10 @@ import Navbar from "./components/Navbar";
 import Title from "./components/Title";
 
 function App(props) {
-  const loaded = props.loaded;
+  setTimeout(() => localStorage.setItem("loaded", 1), 20000);
   return (
     <div className="main">
-      <Navbar loaded={!loaded} />
+      <Navbar />
       <Title />
       <HomeSkills />
       <HomeProjects />
