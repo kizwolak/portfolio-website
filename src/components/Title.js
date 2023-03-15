@@ -2,7 +2,6 @@ import React from "react";
 
 export default function Title() {
   const [time, setTime] = React.useState(new Date().getHours());
-  console.log(time);
   React.useEffect(() => {
     const newTime = new Date().getHours();
     setTime(newTime);

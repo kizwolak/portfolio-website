@@ -51,24 +51,14 @@ nav {
   .navbar-text {
     display: flex;
     gap: 4rem;
-    animation: subtitle-fade-in 14s;
   }
   .navbar-img {
     display: flex;
     gap: 5rem;
-
-    #first-nav-img{
-      animation: navbar-img-bounce 10s;
-    }
-    #sec-nav-img{
-      animation: navbar-img-bounce 12s;
-    }
-    #thrd-nav-img{
-      animation: navbar-img-bounce 14s;
-    }
   }
-  button {
+  a {
     background-color: transparent;
+    text-decoration: none;
     border-style: none;
     font-size: 1.25rem;    
   }
@@ -77,6 +67,22 @@ nav {
       height: 2.5rem;
     }
   }
+}
+
+.navbar-text-fade {
+  animation: subtitle-fade-in 14s;
+}
+
+.img-bounce-1 {
+  animation: navbar-img-bounce 10s;
+}
+
+.img-bounce-1 {
+  animation: navbar-img-bounce 12s;
+}
+
+.img-bounce-1 {
+  animation: navbar-img-bounce 14s;
 }
 
 @keyframes navbar-img-bounce {

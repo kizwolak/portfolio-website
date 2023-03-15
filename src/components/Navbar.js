@@ -1,11 +1,13 @@
 import React from "react";
 
-export default function Navbar() {
+export default function Navbar({ loaded }) {
+  console.log(loaded);
   return (
     <nav>
-      <div className="navbar-text">
-        <button>About me</button>
-        <button>Projects</button>
+      <div className={loaded ? "navbar-text navbar-text-fade" : "navbar-text"}>
+        <a href="./">Home</a>
+        <a href="./about">About me</a>
+        <a href="./projects">Projects</a>
       </div>
       <div className="navbar-img">
         <a href="https://github.com/kizwolak" id="first-nav-img">
