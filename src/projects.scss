@@ -5,14 +5,61 @@
     margin-bottom: 1.2rem;
 }
 
+.project-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p {
+        font-size: 2rem;
+    }
+
+    div {
+        margin: 1rem;
+    }
+}
+
 .hidden-project-group {
     overflow: hidden;
-    transition: max-height 0.5s ease-out;
+    transition: margin 0.5s ease-out, border 0.5s ease-out, max-height 0.5s ease-out;
     max-height: 0;
+    margin: 0 2rem;
+    padding: 0em;
+    border: 0px solid black;
+    border-radius: 1rem;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+   
+    .project-title {
+        font-size: 1.5rem;
+        text-decoration: underline;
+    }
+
+    .project-desc {
+        font-size: 1.2rem;
+    }
 }
 
 .project-group-display {
-    transition: max-height 0.5s ease-out;
     overflow: hidden;
-    max-height: 3rem;
+    transition: max-height 0.5s ease-out;
+    max-height: 30rem;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 2rem;
+    border: 1px solid black;
+    border-radius: 1rem;
+    
+    .project-title {
+        font-size: 1.5rem;
+        text-decoration: underline;
+    }
+
+    .project-desc {
+        font-size: 1.2rem;
+    }
 }
+
