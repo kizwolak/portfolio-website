@@ -276,9 +276,109 @@ nav {
 }
 
 footer {
-  animation: skills-fade-in 30s;
   grid-area: footer;
   margin-top: 3em;
   margin-bottom: 2em;
   text-align: center;
+}
+
+.footer-fade-in {
+  animation: skills-fade-in 30s;
+}
+
+@media (min-width: 700px) {
+
+  .title-greeting {
+    text-align: center;
+  }
+
+  .subtitle {
+    padding: 0 5rem;
+    text-align: center;
+  }
+
+  @keyframes homeskill-left-center {
+    0% { transform: translateX(-80em); }
+    1% { transform: translateX(-80em); }
+    50% { transform: translateX(-80em); }
+    55% { transform: translatex(0); } 
+  }
+
+  .projects-disclaimer {
+    padding: 0 6rem;
+    text-align: center;
+  }
+
+  .project-info {
+    padding: 0 5rem;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .navbar-text {
+    gap: 10rem !important;
+    
+    a {
+      font-size: 3rem;
+    }
+  }
+
+  .navbar-img {
+    margin-top: 1rem;
+    gap: 9rem !important;
+
+    img {
+      width: 5rem;
+      height: 5rem;
+    }
+  }
+
+  .home-skill > p {
+    font-size: 2rem;
+  }
+
+  .home-skill > img {
+    height: 2rem;
+    width: 2rem;
+  }
+
+  .title-greeting {
+    font-size: 7rem;
+    width: fit-content;
+    margin: 2rem 0;
+  }
+
+  .home-skills {
+    margin: 2rem 0;
+  }
+
+  .projects-header {
+    font-size: 4rem !important;
+  }
+
+  .projects-disclaimer {
+    font-size: 1.3rem !important;
+    margin-bottom: 3rem !important;
+  }
+
+  .project-group {
+    margin: 0 5rem;
+    padding: 0 5rem !important;
+    width: 70rem;
+  }
+
+  .project {
+    width: 100%;
+    padding: 0 2rem;
+  }
+
+  .slide img {
+    width: 40rem !important;
+    height: 20rem !important;
+  }
+
+  .slide p {
+    font-size: 2rem;
+  }
 }

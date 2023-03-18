@@ -1,12 +1,14 @@
 import React from "react";
 import "../projects.scss";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 export default function Projects() {
   const [reactClick, setReactClick] = React.useState(true);
   const [gamesClick, setGamesClick] = React.useState(true);
   const [toolsClick, setToolsClick] = React.useState(true);
   const [dataClick, setDataClick] = React.useState(true);
+  const [testClick, setTestClick] = React.useState(true);
   const [miscelClick, setMiscelClick] = React.useState(true);
   const handleReactClick = () => {
     setReactClick((reactClick) => !reactClick);
@@ -19,6 +21,9 @@ export default function Projects() {
   };
   const handleDataClick = () => {
     setDataClick((dataClick) => !dataClick);
+  };
+  const handleTestClick = () => {
+    setTestClick((testClick) => !testClick);
   };
   const handleMiscelClick = () => {
     setMiscelClick((miscelClick) => !miscelClick);
@@ -190,6 +195,37 @@ export default function Projects() {
         </div>
       </div>
       <div className="project-group">
+        <p onClick={handleTestClick}>Testing</p>
+        <div
+          className={
+            testClick ? "hidden-project-group" : "project-group-display"
+          }
+        >
+          <div className="project">
+            <p className="project-title">JS testing practice</p>
+            <p className="project-desc">
+              Jest testing of some basic JS functions. It's nice to dip your
+              toes in something!
+              <br />
+              <a href="https://github.com/kizwolak/testing-practice">
+                Click here to check it out!
+              </a>
+            </p>
+          </div>
+          <div className="project">
+            <p className="project-title">Linked lists</p>
+            <p className="project-desc">
+              A linked list project that finds the index of a number, adds a
+              value to the list, checks if a list contains a value and more.
+              <br />
+              <a href="https://github.com/kizwolak/linked-lists/blob/main/linkedLists.js">
+                Click here to check it out!
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="project-group">
         <p onClick={handleMiscelClick}>Miscellaneous</p>
         <div
           className={
@@ -220,10 +256,11 @@ export default function Projects() {
         </div>
       </div>
       <p className="project-info">
-        PLease keep in mind that I am always working on something new, so this
+        Please keep in mind that I am always working on something new, so this
         list is not final. If you'd like to see what else I've been up to, visit
         my GitHub!
       </p>
+      <Footer />
     </div>
   );
 }
