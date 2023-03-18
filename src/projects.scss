@@ -5,6 +5,10 @@
     margin-bottom: 1.2rem;
 }
 
+.projects-disclaimer {
+    margin: 1rem 2rem;
+}
+ 
 .project-group {
     display: flex;
     flex-direction: column;
@@ -44,7 +48,7 @@
 .project-group-display {
     overflow: hidden;
     transition: max-height 0.5s ease-out;
-    max-height: 30rem;
+    max-height: 60rem;
     display: flex;
     gap: 1rem;
     flex-direction: column;
@@ -63,3 +67,7 @@
     }
 }
 
+.project-info {
+    margin: 1rem 2rem;
+    font-size: 1.2rem
+}

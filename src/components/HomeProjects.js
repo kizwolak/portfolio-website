@@ -10,8 +10,13 @@ export default function HomeProjects() {
       autoplayInterval: 7000,
     },
   });
+  const isLoaded = localStorage.getItem("loaded");
   return (
-    <div className="home-projects">
+    <div
+      className={
+        !isLoaded ? "home-projects home-projects-fade-in" : "home-projects"
+      }
+    >
       <h2>And here is some stuff I've made:</h2>
       <div className="blaze-slider" ref={ref}>
         <div className="blaze-container">

@@ -101,10 +101,22 @@ nav {
 }
 
 .title-greeting {
+  display: inline-block;
+  margin-top: 0.2rem;
+  font-size: 4rem;
+  width: 300px;
+}
+
+.title-greeting-fade-in {
   animation: title-fade-in 3s;
 }
 
 .subtitle {
+  width: 70%;
+  font-size: 1.5rem;
+}
+
+.subtitle-fade-in {
   animation: subtitle-fade-in 8s;
 }
 
@@ -126,10 +138,10 @@ nav {
   flex-direction: column;
   align-items: center;
   margin-top: 1rem;
+}
 
-  h1 {
-    animation: skills-fade-in 18s;
-  }
+.skills-h1-fade-in {
+  animation: skills-fade-in 18s;
 }
 
 @keyframes skills-fade-in {
@@ -178,39 +190,42 @@ nav {
 
 .react {
   background-color: #61DBFB;
-  animation: homeskill-left-center 18s
 }
 
 .javascript {
   background-color: #f7df1e;
-  animation: homeskill-left-center 20s
 }
 
 .sass {
   background-color: #cc499c;
-  animation: homeskill-left-center 22s
 }
 
-.accessibility {
+.api {
   background-color: #44CF6C;
-  animation: homeskill-left-center 24s
 }
 
 .testing {
   background-color: #FBC2B5;
+}
+
+.left-center-react {
+  animation: homeskill-left-center 18s
+}
+
+.left-center-javascript {
+  animation: homeskill-left-center 20s
+}
+
+.left-center-sass {
+  animation: homeskill-left-center 22s
+}
+
+.left-center-api {
+  animation: homeskill-left-center 24s
+}
+
+.left-center-testing {
   animation: homeskill-left-center 26s
-}
-
-.title-greeting {
-  display: inline-block;
-  margin-top: 0.2rem;
-  font-size: 4rem;
-  width: 300px;
-}
-
-.subtitle {
-  width: 70%;
-  font-size: 1.5rem;
 }
 
 .home-projects{
@@ -219,11 +234,14 @@ nav {
   flex-direction: column;
   align-items: center;
   margin-top: 1rem;
-  animation: skills-fade-in 30s;
 
   .projects-subtitle {
     margin-top: 2.5rem;
   }
+}
+
+.home-projects-fade-in {
+  animation: skills-fade-in 30s;
 }
 
 .blaze-slider {
