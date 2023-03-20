@@ -19,7 +19,7 @@ export default function Navbar({ loaded }) {
           <img src="./images/github-mark.svg" alt="Github" />
         </a>
         <a
-          href="https://github.com/kizwolak"
+          href="mailto:ki.zwolak@gmail.com"
           className={!isLoaded ? "img-bounce-2" : ""}
         >
           <img

@@ -21,6 +21,11 @@ export default function AboutMe(props) {
         Polish, English, French and some Rioplatense Spanish, so feel free to
         contact me in any of these languages!
       </p>
+      <div className="contact">
+        <p>You can contact me at:</p>
+        <p>ki.zwolak@gmail.com</p>
+        <p>LinkedIn</p>
+      </div>
       <Footer />
     </div>
   );
