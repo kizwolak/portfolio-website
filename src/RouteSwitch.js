@@ -6,9 +6,9 @@ import Projects from "./components/Projects";
 
 const RouteSwitch = () => {
   return (
-    <HashRouter basename="/portfolio-website">
+    <HashRouter>
       <Routes>
-        <Route path="/portfolio-website" element={<App />} />
+        <Route path="/" element={<App />} />
         <Route path="/about" element={<AboutMe />} />
         <Route path="/projects" element={<Projects />} />
       </Routes>
