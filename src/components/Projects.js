@@ -212,17 +212,6 @@ export default function Projects() {
               </a>
             </p>
           </div>
-          <div className="project">
-            <p className="project-title">Linked lists</p>
-            <p className="project-desc">
-              A linked list project that finds the index of a number, adds a
-              value to the list, checks if a list contains a value and more.
-              <br />
-              <a href="https://github.com/kizwolak/linked-lists/blob/main/linkedLists.js">
-                Click here to check it out!
-              </a>
-            </p>
-          </div>
         </div>
       </div>
       <div className="project-group">
