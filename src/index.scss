@@ -22,21 +22,10 @@ body {
 // best candidates: #EAD94C, #F4D06F, #FF9F1C
 
 .main {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  grid-template-areas: 
-  'navbar navbar navbar navbar navbar'
-  'title title title title title'
-  'home-skills home-skills home-skills home-skills home-skills'
-  'home-skills home-skills home-skills home-skills home-skills'
-  'home-skills home-skills home-skills home-skills home-skills'
-  'home-skills home-skills home-skills home-skills home-skills'
-  'home-projects home-projects home-projects home-projects home-projects'
-  'home-projects home-projects home-projects home-projects home-projects'
-  'home-projects home-projects home-projects home-projects home-projects'
-  'home-projects home-projects home-projects home-projects home-projects'
-  'footer footer footer footer footer';
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 nav {
@@ -70,19 +59,19 @@ nav {
 }
 
 .navbar-text-fade {
-  animation: subtitle-fade-in 14s;
+  animation: subtitle-fade-in 10s;
 }
 
 .img-bounce-1 {
-  animation: navbar-img-bounce 10s;
+  animation: navbar-img-bounce 5s;
 }
 
 .img-bounce-2 {
-  animation: navbar-img-bounce 12s;
+  animation: navbar-img-bounce 6s;
 }
 
 .img-bounce-3 {
-  animation: navbar-img-bounce 14s;
+  animation: navbar-img-bounce 7s;
 }
 
 @keyframes navbar-img-bounce {
@@ -117,7 +106,7 @@ nav {
 }
 
 .subtitle-fade-in {
-  animation: subtitle-fade-in 8s;
+  animation: subtitle-fade-in 4s;
 }
 
 @keyframes title-fade-in {
@@ -141,7 +130,7 @@ nav {
 }
 
 .skills-h1-fade-in {
-  animation: skills-fade-in 18s;
+  animation: skills-fade-in 10s;
 }
 
 @keyframes skills-fade-in {
@@ -209,23 +198,23 @@ nav {
 }
 
 .left-center-react {
-  animation: homeskill-left-center 18s
+  animation: homeskill-left-center 12s
 }
 
 .left-center-javascript {
-  animation: homeskill-left-center 20s
+  animation: homeskill-left-center 14s
 }
 
 .left-center-sass {
-  animation: homeskill-left-center 22s
+  animation: homeskill-left-center 16s
 }
 
 .left-center-api {
-  animation: homeskill-left-center 24s
+  animation: homeskill-left-center 18s
 }
 
 .left-center-testing {
-  animation: homeskill-left-center 26s
+  animation: homeskill-left-center 20s
 }
 
 .home-projects{
@@ -241,7 +230,7 @@ nav {
 }
 
 .home-projects-fade-in {
-  animation: skills-fade-in 30s;
+  animation: skills-fade-in 24s;
 }
 
 .blaze-slider {
@@ -275,6 +264,12 @@ nav {
   text-align: center;
 }
 
+.home-projects-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 footer {
   grid-area: footer;
   margin-top: 3em;
@@ -283,7 +278,7 @@ footer {
 }
 
 .footer-fade-in {
-  animation: skills-fade-in 30s;
+  animation: skills-fade-in 26s;
 }
 
 @media (min-width: 700px) {
@@ -316,6 +311,7 @@ footer {
 }
 
 @media (min-width: 1200px) {
+  
   .navbar-text {
     gap: 10rem !important;
     
@@ -347,6 +343,28 @@ footer {
     font-size: 7rem;
     width: fit-content;
     margin: 2rem 0;
+  }
+
+  .home-skills-projects {
+    display: flex;
+    justify-content: space-between;
+    width: 90vw;
+    
+    .home-skills {
+      width: 50%;
+    }
+
+    .home-projects {
+      width: 50%;
+    }
+
+    .blaze-slider {
+      width: 70%;
+    }
+
+    .blaze-track > * {
+      width: 100%;
+    }
   }
 
   .home-skills {
