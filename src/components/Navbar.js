@@ -24,14 +24,14 @@ export default function Navbar({ loaded }) {
         >
           <img
             src="./images/email-black-envelope-back-svgrepo-com.svg"
-            alt="Github"
+            alt="Email"
           />
         </a>
         <a
           href="https://github.com/kizwolak"
           className={!isLoaded ? "img-bounce-3" : ""}
         >
-          <img src="./images/iconmonstr-linkedin-3.svg" alt="Github" />
+          <img src="./images/iconmonstr-linkedin-3.svg" alt="LinkedIn" />
         </a>
       </div>
     </nav>
