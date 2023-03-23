@@ -351,6 +351,8 @@ footer {
     justify-content: space-between;
     align-items: center;
     width: 90vw;
+    margin-bottom: 1rem;
+
     .home-skills {
       width: 50%;
     }
@@ -361,6 +363,7 @@ footer {
 
     .blaze-slider {
       width: 70%;
+      height: 22em;
     }
 
     .blaze-track > * {

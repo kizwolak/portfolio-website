@@ -92,8 +92,9 @@ export default function Projects() {
           <div className="project">
             <p className="project-title">Battleships</p>
             <p className="project-desc">
-              A battleships game. It's got tons of cool features, like
-              confirming your selection and a futuristic design. <br />
+              A battleships game. Put your ships on the board and click away!
+              It's got tons of cool features, like confirming your selection and
+              a futuristic design. <br />
               <a href="https://kizwolak.github.io/battleships/dist/index.html">
                 Click here to check it out!
               </a>
