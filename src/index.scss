@@ -249,6 +249,7 @@ nav {
     margin-bottom: 1rem;
     width: 20em;
     height: 10em;
+    border-radius: 1em;
   }
 
   p {
@@ -348,8 +349,8 @@ footer {
   .home-skills-projects {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 90vw;
-    
     .home-skills {
       width: 50%;
     }
@@ -392,11 +393,11 @@ footer {
   }
 
   .slide img {
-    width: 40rem !important;
+    width: 30rem !important;
     height: 20rem !important;
   }
 
   .slide p {
-    font-size: 2rem;
+    font-size: 1.4rem;
   }
 }
