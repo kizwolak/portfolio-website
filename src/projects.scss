@@ -7,7 +7,7 @@
 .projects-header {
     text-align: center;
     font-size: 1.7rem;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     margin-bottom: 1.2rem;
 }
 
@@ -29,17 +29,22 @@
     }
 }
 
+.project-group>p:hover {
+    cursor: pointer;
+}
+
 .hidden-project-group {
     overflow: hidden;
-    transition: margin 0.5s ease-out, border 0.5s ease-out, max-height 0.5s ease-out;
+    transition: border 0.5s ease-out, max-height 0.5s ease-out;
     max-height: 0;
-    margin: 0 2rem;
-    padding: 0em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
     border: 0px solid black;
     border-radius: 1rem;
-    display: flex;
-    gap: 1rem;
-    flex-direction: column;
+    width: 80%;
+
    
     .project-title {
         font-size: 1.5rem;
@@ -59,13 +64,14 @@
     gap: 1rem;
     flex-direction: column;
     align-items: center;
-    margin: 0 2rem;
     border: 1px solid black;
     border-radius: 1rem;
+    width: 80%;
     
     .project-title {
         font-size: 1.5rem;
         text-decoration: underline;
+        margin-bottom: 0.2rem;
     }
 
     .project-desc {

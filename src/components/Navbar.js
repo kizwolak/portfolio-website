@@ -8,8 +8,8 @@ export default function Navbar({ loaded }) {
         className={!isLoaded ? "navbar-text navbar-text-fade" : "navbar-text"}
       >
         <a href="./">Home</a>
-        <a href="./about">About me</a>
-        <a href="./projects">Projects</a>
+        <a href="./#/about">About me</a>
+        <a href="./#/projects">Projects</a>
       </div>
       <div className="navbar-img">
         <a

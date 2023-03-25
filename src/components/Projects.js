@@ -92,8 +92,9 @@ export default function Projects() {
           <div className="project">
             <p className="project-title">Battleships</p>
             <p className="project-desc">
-              A battleships game. It's got tons of cool features, like
-              confirming your selection and a futuristic design. <br />
+              A battleships game. Put your ships on the board and click away!
+              It's got tons of cool features, like confirming your selection and
+              a futuristic design. <br />
               <a href="https://kizwolak.github.io/battleships/dist/index.html">
                 Click here to check it out!
               </a>
@@ -208,17 +209,6 @@ export default function Projects() {
               toes in something!
               <br />
               <a href="https://github.com/kizwolak/testing-practice">
-                Click here to check it out!
-              </a>
-            </p>
-          </div>
-          <div className="project">
-            <p className="project-title">Linked lists</p>
-            <p className="project-desc">
-              A linked list project that finds the index of a number, adds a
-              value to the list, checks if a list contains a value and more.
-              <br />
-              <a href="https://github.com/kizwolak/linked-lists/blob/main/linkedLists.js">
                 Click here to check it out!
               </a>
             </p>

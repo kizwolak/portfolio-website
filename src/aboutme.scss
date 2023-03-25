@@ -8,11 +8,34 @@
 .about-header {
     font-size: 2.5rem;
     text-align: center;
+    margin-top: 1.5rem;
 }
 
 .about-desc {
     text-align: center;
     margin: 0 2rem;
+    margin-top: 0.5em;
+    font-size: 1.1rem;
+}
+
+.about-skills {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+
+  div {
+    width: 70%;
+  }
+}
+
+ul {
+  width: 100;
+
+  li {
+    font-size: 1.2rem;
+  }
 }
 
 @media (min-width: 700px) {
@@ -24,8 +47,5 @@
     margin-top: 2rem;
     padding: 0 10rem;
     font-size: 1.4rem;
-  }
-
-  footer {
   }
 }
