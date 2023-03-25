@@ -1,8 +1,15 @@
 import React from "react";
 
-export default function HomeProjectsFooter() {
+export default function HomeProjectsFooter(props) {
+  const isLoaded = localStorage.getItem("loaded");
   return (
-    <div className="home-projects-footer">
+    <div
+      className={
+        !isLoaded
+          ? "home-projects-footer home-projects-footer-fade-in"
+          : "home-projects"
+      }
+    >
       <h2 className="projects-subtitle">And so much more!</h2>
       <p className="projects-invitation">
         Please visit the Projects page on the navigation bar or check out my

@@ -35,7 +35,7 @@ export default function Projects() {
       <p className="projects-header">Here are some of my projects!</p>
       <p className="projects-disclaimer">
         I recommend viewing the projects on a computer, as most of them have not
-        been made for mobile devices.
+        been optimised for mobile devices.
       </p>
       <div className="project-group">
         <p onClick={handleReactClick}>React</p>

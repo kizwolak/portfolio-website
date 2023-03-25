@@ -17,7 +17,7 @@ export default function HomeProjects() {
         !isLoaded ? "home-projects home-projects-fade-in" : "home-projects"
       }
     >
-      <h2>And here is some stuff I've made:</h2>
+      <h2>And here are some projects I've made:</h2>
       <div className="blaze-slider" ref={ref}>
         <div className="blaze-container">
           <div className="blaze-track-container">
