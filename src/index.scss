@@ -87,13 +87,14 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .title-greeting {
   display: inline-block;
   margin-top: 0.2rem;
   font-size: 4rem;
-  width: 300px;
+  width: 70%;
 }
 
 .title-greeting-fade-in {
@@ -222,7 +223,12 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 1rem;
+  margin-top: 2rem;
+
+  h2 {
+    width: 80%;
+    text-align: center;
+  }
 
   .projects-subtitle {
     margin-top: 2.5rem;
@@ -269,6 +275,7 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 1rem;
 }
 
 .home-projects-footer-fade-in {
@@ -352,10 +359,9 @@ footer {
 
   .home-skills-projects {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
     width: 90vw;
-    margin-bottom: 1rem;
+    margin: 1rem 0;
 
     .home-skills {
       width: 50%;
@@ -363,20 +369,17 @@ footer {
 
     .home-projects {
       width: 50%;
+      margin-top: 0rem !important;
     }
 
     .blaze-slider {
       width: 70%;
-      height: 22em;
+      height: fit-content;
     }
 
     .blaze-track > * {
       width: 100%;
     }
-  }
-
-  .home-skills {
-    margin: 2rem 0;
   }
 
   .projects-header {
@@ -401,10 +404,14 @@ footer {
 
   .slide img {
     width: 30rem !important;
-    height: 20rem !important;
+    height: 16rem !important;
   }
 
   .slide p {
     font-size: 1.4rem;
+  }
+
+  .home-projects-footer {
+    margin-top: 2.5rem;
   }
 }

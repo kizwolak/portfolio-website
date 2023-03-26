@@ -7,7 +7,7 @@ export default function HomeProjectsFooter(props) {
       className={
         !isLoaded
           ? "home-projects-footer home-projects-footer-fade-in"
-          : "home-projects"
+          : "home-projects-footer"
       }
     >
       <h2 className="projects-subtitle">And so much more!</h2>

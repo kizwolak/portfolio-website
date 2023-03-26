@@ -18,8 +18,8 @@ export default function AboutMe(props) {
         problems is an incredible, addictive feeling - especially after spending
         multiple days on them! To expand my skillset, I plan to start learning
         Node and Express soon (though I may actually go into Ruby instead!). I
-        speak Polish, English, French and some Rioplatense Spanish, so feel free
-        to contact me in any of these languages!
+        speak Polish, English, French and some Spanish, so feel free to contact
+        me in any of these languages!
       </p>
       <div className="about-skills">
         <h1>My skills</h1>
