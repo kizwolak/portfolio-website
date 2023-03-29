@@ -5,6 +5,7 @@ import HomeProjectsFooter from "./components/HomeProjectsFooter";
 import HomeSkills from "./components/HomeSkills";
 import Navbar from "./components/Navbar";
 import Title from "./components/Title";
+import ContactForm from "./components/ContactForm";
 
 function App(props) {
   setTimeout(() => localStorage.setItem("loaded", 1), 20000);
@@ -17,6 +18,7 @@ function App(props) {
         <HomeProjects />
       </div>
       <HomeProjectsFooter />
+      <ContactForm />
       <Footer />
     </div>
   );

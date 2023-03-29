@@ -1,7 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Navbar({ loaded }) {
   const isLoaded = localStorage.getItem("loaded");
+  const handleEmailClick = () => {
+    setTimeout(() => {
+      const contactForm = document.querySelector(".contact-form");
+      contactForm.scrollIntoView();
+    }, 100);
+  };
   return (
     <nav>
       <div
@@ -18,15 +25,18 @@ export default function Navbar({ loaded }) {
         >
           <img src="./images/github-mark.svg" alt="Github" />
         </a>
-        <a
-          href="mailto:ki.zwolak@gmail.com"
-          className={!isLoaded ? "img-bounce-2" : ""}
-        >
-          <img
-            src="./images/email-black-envelope-back-svgrepo-com.svg"
-            alt="Email"
-          />
-        </a>
+        <Link to="/#">
+          {" "}
+          <button
+            onClick={handleEmailClick}
+            className={!isLoaded ? "img-bounce-2" : ""}
+          >
+            <img
+              src="./images/email-black-envelope-back-svgrepo-com.svg"
+              alt="Email"
+            />
+          </button>
+        </Link>
         <a
           href="https://github.com/kizwolak"
           className={!isLoaded ? "img-bounce-3" : ""}
