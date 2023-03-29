@@ -33,10 +33,6 @@ export default function Projects() {
     <div className="projects">
       <Navbar />
       <p className="projects-header">Here are some of my projects!</p>
-      <p className="projects-disclaimer">
-        I recommend viewing the projects on a computer, as most of them have not
-        been optimised for mobile devices.
-      </p>
       <div className="project-group">
         <p onClick={handleReactClick}>React</p>
         <div
@@ -205,8 +201,8 @@ export default function Projects() {
           <div className="project">
             <p className="project-title">JS testing practice</p>
             <p className="project-desc">
-              Jest testing of some basic JS functions. It's nice to dip your
-              toes in something!
+              Jest testing of some basic JS functions. Tests that check if a
+              calculator works, if the right array values are returned and more.
               <br />
               <a href="https://github.com/kizwolak/testing-practice">
                 Click here to check it out!
