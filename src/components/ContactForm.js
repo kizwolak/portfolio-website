@@ -34,23 +34,26 @@ export default function ContactForm() {
     <div className="contact-form">
       <h3>Or maybe now? Feel free to send me a message here!</h3>
       <form onSubmit={sendEmail} ref={form}>
-        <label>Name</label>
+        <label htmlFor="name">Name</label>
         <input
           type="text"
+          id="name"
           name="from_name"
           value={toSend.from_name}
           onChange={handleChange}
         />
-        <label>E-mail address</label>
+        <label htmlFor="email">E-mail address</label>
         <input
           type="email"
+          id="email"
           name="from_email"
           value={toSend.from_email}
           onChange={handleChange}
         />
-        <label>Message</label>
+        <label htmlFor="message">Message</label>
         <textarea
           name="message"
+          id="message"
           value={toSend.message}
           onChange={handleChange}
         />

@@ -10,17 +10,8 @@
 }
 
 body {
-  // background-image: url('../public/images/new-background.png');
-  // background-size: cover;
-  // background-position: center;
-  background-color: #fada5e;
+  background-color: #FBFAF5;
 }
-
-// colour candidates + for abstract shapes for background
-// 347FC4 steel blue, F9CFF2 mimi pink, F2545B indian red, A5C4D4 columbia blue, 
-// #F4D06F jasmine, 
-
-// best candidates: #EAD94C, #F4D06F, #FF9F1C
 
 .main {
   display: flex;
@@ -304,7 +295,7 @@ footer {
 
   h3 {
     padding: 0 1rem;
-    margin-bottom: 1rem !important;
+    margin-bottom: 2rem !important;
     text-align: center;
   }
 
@@ -314,6 +305,10 @@ footer {
     padding: 0 2.5rem;
     margin-top: 0.5rem;
     gap: 0.4rem;
+
+    label {
+      padding: 0.2rem 0 !important;
+    }
 
     input {
       width: 70%;
@@ -503,6 +498,11 @@ footer {
   }
 
   form {
+
+    label {
+      font-size: 1.2rem
+    }
+
     input {
       font-size: 1.5rem;
     }

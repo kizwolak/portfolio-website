@@ -209,6 +209,18 @@ export default function Projects() {
               </a>
             </p>
           </div>
+          <div className="project">
+            <p className="project-title">React testing practice</p>
+            <p className="project-desc">
+              Testing components with React. Input, async/promises, callback
+              functions and testing multiple elements are some of the topics I
+              touched.
+              <br />
+              <a href="https://github.com/kizwolak/testing-practice">
+                Click here to check it out!
+              </a>
+            </p>
+          </div>
         </div>
       </div>
       <div className="project-group">
