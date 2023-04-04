@@ -10,16 +10,31 @@ export default function AboutMe(props) {
       <Navbar loaded={loaded} />
       <p className="about-header">Nice to meet you!</p>
       <p className="about-desc">
-        I am a fresh web developer who (for now) specialises in the front-end. I
-        used to be a medical and legal translator, but I decided to switch
-        careers. After trying many different programming languages, something
-        finally clicked when I tried web dev. Creating websites feels like
-        painting on an HTML canvas. I love learning about it and solving
-        problems is an incredible, addictive feeling - especially after spending
-        multiple days on them! To expand my skillset, I plan to start learning
-        Node and Express soon (though I may actually go into Ruby instead!). I
-        speak Polish, English, French and some Spanish, so feel free to contact
-        me in any of these languages!
+        Hey there! Are you ready to meet a fresh and enthusiastic web developer?
+        That's right, it's me! I may be new to the industry, but don't let that
+        fool you, I have a passion for front-end web development that is second
+        to none.
+        <br />
+        <br />
+        In my past life, I was a medical and legal translator, but I knew I
+        needed a change. I experimented with various programming languages until
+        I stumbled upon web development, and something just clicked. It's like
+        painting on an HTML canvas, and I can't get enough of it. I live for
+        that feeling of solving a difficult problem, especially after spending
+        days on it. It's a rush like no other!
+        <br />
+        <br />
+        I'm always looking for ways to expand my skillset, which is why I
+        recently dove headfirst into learning Node and MongoDB. And next on my
+        list? Express! The more tools I have at my disposal, the better I can
+        serve my clients.
+        <br />
+        <br />
+        But enough about me. Let's talk about you! Do you need a website? Want
+        to make it look fantastic and work flawlessly? Do you speak Polish,
+        English, French, or even a bit of Spanish? Then look no further because
+        I'm your guy! Contact me in any of these languages, and let's get
+        started on creating a website that you'll be proud of.
       </p>
       <div className="about-skills">
         <h1>My skills</h1>
