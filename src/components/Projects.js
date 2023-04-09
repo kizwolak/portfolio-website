@@ -8,6 +8,7 @@ export default function Projects() {
   const [gamesClick, setGamesClick] = React.useState(true);
   const [toolsClick, setToolsClick] = React.useState(true);
   const [dataClick, setDataClick] = React.useState(true);
+  const [nodeClick, setNodeClick] = React.useState(true);
   const [testClick, setTestClick] = React.useState(true);
   const [miscelClick, setMiscelClick] = React.useState(true);
   const handleReactClick = () => {
@@ -21,6 +22,9 @@ export default function Projects() {
   };
   const handleDataClick = () => {
     setDataClick((dataClick) => !dataClick);
+  };
+  const handleNodeClick = () => {
+    setNodeClick((nodeClick) => !nodeClick);
   };
   const handleTestClick = () => {
     setTestClick((testClick) => !testClick);
@@ -186,6 +190,30 @@ export default function Projects() {
               <br />
               <a href="https://github.com/kizwolak/linked-lists/blob/main/linkedLists.js">
                 Click here to check it out!
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="project-group">
+        <p onClick={handleNodeClick}>Node + Express</p>
+        <div
+          className={
+            nodeClick ? "hidden-project-group" : "project-group-display"
+          }
+        >
+          <div className="project">
+            <p className="project-title">Node and Express basic site</p>
+            <p className="project-desc">
+              I set up some basic websites in Node and Express to learn more
+              about how they work. This is just the beginning of the new journey
+              into the back-end!
+              <br />
+              <a href="https://github.com/kizwolak/basic-informational-site">
+                Click here to check out the Node version!
+              </a>
+              <a href="https://github.com/kizwolak/express-basic-informational-site">
+                Click here to check out the Express version!
               </a>
             </p>
           </div>
