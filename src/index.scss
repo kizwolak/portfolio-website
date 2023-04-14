@@ -414,8 +414,8 @@ footer {
     grid-template-rows: 1fr 1fr;
     grid-template-areas: 'greeting greeting greeting'
                           '. subtitle subtitle';
-    padding: 3rem 0;
-    height: 30vh;
+    height: fit-content;
+    margin-top: 14rem;
 
     .title-greeting {
       font-size: 7rem;
@@ -428,6 +428,8 @@ footer {
       animation-timing-function: linear;
       grid-area: subtitle;
       font-size: 2rem;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
     }
   }
 
