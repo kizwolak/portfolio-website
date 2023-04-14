@@ -164,6 +164,7 @@ nav {
 
   p {
     width: 15%;
+    // color: #fcfcfc !important;
   }
 
   img {
@@ -179,23 +180,23 @@ nav {
 }
 
 .react {
-  background-color: #61DBFB;
+  background-color: #c4c4c4;
 }
 
 .javascript {
-  background-color: #f7df1e;
+  background-color: #c4c4c4;
 }
 
 .sass {
-  background-color: #cc499c;
+  background-color: #c4c4c4
 }
 
 .api {
-  background-color: #44CF6C;
+  background-color: #c4c4c4;
 }
 
 .testing {
-  background-color: #FBC2B5;
+  background-color: #c4c4c4;
 }
 
 .left-center-react {
@@ -428,6 +429,10 @@ footer {
       grid-area: subtitle;
       font-size: 2rem;
     }
+  }
+
+  .home-skill {
+    height: 3rem;
   }
 
   .home-skill > p {
