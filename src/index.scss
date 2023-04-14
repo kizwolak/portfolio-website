@@ -32,7 +32,7 @@ nav {
   padding-bottom: 1rem;
   top: 0;
   width: 100%;
-  background-color: #242323;
+  background-color: #0f0f0f;
   color: #fcfcfc;
   z-index: 1;
 
@@ -423,7 +423,8 @@ footer {
     grid-template-areas: 'greeting greeting greeting'
                           '. subtitle subtitle';
     height: fit-content;
-    margin-top: 17rem;
+    margin-top: 13rem;
+    margin-bottom: -2rem;
 
     .title-greeting {
       font-size: 7rem;
@@ -509,7 +510,7 @@ footer {
   }
 
   .home-projects-footer {
-    margin-top: 2.5rem;
+    margin-top: 4rem;
   }
 
   .projects-invitation {
