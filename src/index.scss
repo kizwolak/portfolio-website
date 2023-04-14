@@ -27,11 +27,15 @@ nav {
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
-  padding: 0.5rem;
-  margin-top: 1em;
+  padding: 1rem;
   position: fixed;
+  padding-bottom: 1rem;
   top: 0;
   width: 100%;
+  background-color: #0f0f0f;
+  color: #fcfcfc;
+  z-index: 1;
+
   .navbar-text {
     display: flex;
     gap: 4rem;
@@ -44,10 +48,10 @@ nav {
     background-color: transparent;
     text-decoration: none;
     border-style: none;
-    font-size: 1.25rem;    
-    
+    font-size: 1.25rem;
+    color: #fcfcfc;
     img {
-      height: 2.5rem;
+      height: 3rem;
     }
   }
   button {
@@ -86,7 +90,7 @@ nav {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 8rem;
+  margin-top: 9.5rem;
 }
 
 .title-greeting {
@@ -383,6 +387,10 @@ footer {
 }
 
 @media (min-width: 1200px) {
+
+  nav {
+    height: 19vh;
+  }
   
   .navbar-text {
     gap: 10rem !important;
@@ -397,8 +405,8 @@ footer {
     gap: 9rem !important;
 
     img {
-      width: 5rem;
-      height: 5rem;
+      width: 4rem;
+      height: 4rem;
     }
   }
 
@@ -415,7 +423,7 @@ footer {
     grid-template-areas: 'greeting greeting greeting'
                           '. subtitle subtitle';
     height: fit-content;
-    margin-top: 14rem;
+    margin-top: 17rem;
 
     .title-greeting {
       font-size: 7rem;

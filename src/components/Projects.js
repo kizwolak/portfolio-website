@@ -212,6 +212,7 @@ export default function Projects() {
               <a href="https://github.com/kizwolak/basic-informational-site">
                 Click here to check out the Node version!
               </a>
+              <br />
               <a href="https://github.com/kizwolak/express-basic-informational-site">
                 Click here to check out the Express version!
               </a>
@@ -220,9 +221,9 @@ export default function Projects() {
           <div className="project">
             <p className="project-title">Member App</p>
             <p className="project-desc">
-              Not the most exciting project, but this is the first time I have
-              worked on a CRUD application. The GUI handles adding members to
-              the API, but it is also possible to PUT and DELETE objects.
+              This project is the first time I have worked on a CRUD
+              application. The GUI handles adding members to the API, but it is
+              also possible to PUT and DELETE objects.
               <br />
               <a href="https://github.com/kizwolak/member-app">
                 Click here to check it out!

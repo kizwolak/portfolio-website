@@ -12,7 +12,7 @@ export default function Navbar({ loaded }) {
   return (
     <nav>
       <div
-        className={!isLoaded ? "navbar-text navbar-text-fade" : "navbar-text"}
+        className={!isLoaded ? `navbar-text navbar-text-fade` : `navbar-text`}
       >
         <a href="./">Home</a>
         <a href="./#/about">About me</a>
