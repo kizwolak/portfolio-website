@@ -7,34 +7,25 @@ export default function AboutMe(props) {
   const loaded = props.loaded;
   return (
     <div className="about-me">
+      <img
+        src="./images/profile-photo.jpg"
+        alt="Profile"
+        className="profile-photo"
+      />
       <Navbar loaded={loaded} />
       <p className="about-header">Nice to meet you!</p>
       <p className="about-desc">
-        Hey there! Are you ready to meet a fresh and enthusiastic web developer?
-        That's right, it's me! I may be new to the industry, but don't let that
-        fool you, I have a passion for front-end web development that is second
-        to none.
+        My name is Krzysztof and I began my coding journey with JavaScript
+        around 1 year ago. Seeing the results of my work in the DOM and being
+        proud of what I learned made me fall in love with coding. After mutliple
+        days of studying for 12 hours, I finally feel confident enough to send
+        résumés 😄.
         <br />
         <br />
-        In my past life, I was a medical and legal translator, but I knew I
-        needed a change. I experimented with various programming languages until
-        I stumbled upon web development, and something just clicked. It's like
-        painting on an HTML canvas, and I can't get enough of it. I live for
-        that feeling of solving a difficult problem, especially after spending
-        days on it. It's a rush like no other!
-        <br />
-        <br />
-        I'm always looking for ways to expand my skillset, which is why I
-        recently dove headfirst into learning Node and MongoDB. And next on my
-        list? Express! The more tools I have at my disposal, the better I can
-        serve my clients.
-        <br />
-        <br />
-        But enough about me. Let's talk about you! Do you need a website? Want
-        to make it look fantastic and work flawlessly? Do you speak Polish,
-        English, French, or even a bit of Spanish? Then look no further because
-        I'm your guy! Contact me in any of these languages, and let's get
-        started on creating a website that you'll be proud of.
+        The possibilities of web development are incredible, which is why I have
+        also recently started learning the back-end to be able to create
+        amazing, fully-fledged apps. I simply love learning about web
+        development and I hope I will be able to show my passion to you.
       </p>
       <div className="about-skills">
         <h1>My skills</h1>
@@ -69,7 +60,7 @@ export default function AboutMe(props) {
           </ul>
         </div>
         <div className="about-hobbies">
-          <h2>My hobbies</h2>
+          <h2>My hobbies and interests</h2>
           <ul>
             <li>History</li>
             <li>Photography</li>

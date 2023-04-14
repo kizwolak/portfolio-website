@@ -75,8 +75,9 @@ export default function Title() {
   return (
     <section className="title">
       {greeting()}
+
       <p className={!isLoaded ? "subtitle subtitle-fade-in" : "subtitle"}>
-        My name is Krzysztof and I want to work for you.
+        My name is Krzysztof and I would love to work with you!
       </p>
     </section>
   );
