@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "../navbar.scss";
 
 export default function Navbar({ loaded }) {
   const isLoaded = localStorage.getItem("loaded");
@@ -12,7 +13,9 @@ export default function Navbar({ loaded }) {
   return (
     <nav>
       <div
-        className={!isLoaded ? `navbar-text navbar-text-fade` : `navbar-text`}
+        className={
+          !isLoaded ? `navbar-links navbar-links-fade` : `navbar-links`
+        }
       >
         <a href="./">Home</a>
         <a href="./#/about">About me</a>

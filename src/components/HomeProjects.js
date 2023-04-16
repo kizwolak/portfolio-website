@@ -1,6 +1,7 @@
 import React from "react";
 import { useBlazeSlider } from "react-blaze-slider";
 import "blaze-slider/dist/blaze.css";
+import "../homeskillsprojects.scss";
 
 export default function HomeProjects() {
   const ref = useBlazeSlider({
@@ -17,7 +18,7 @@ export default function HomeProjects() {
         !isLoaded ? "home-projects home-projects-fade-in" : "home-projects"
       }
     >
-      <h2>And here are some projects I've made:</h2>
+      <p>And here are some projects I've made:</p>
       <div className="blaze-slider" ref={ref}>
         <div className="blaze-container">
           <div className="blaze-track-container">

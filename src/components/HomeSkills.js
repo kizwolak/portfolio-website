@@ -1,12 +1,13 @@
 import React from "react";
+import "../homeskillsprojects.scss";
 
 export default function HomeSkills() {
   const isLoaded = localStorage.getItem("loaded");
   return (
     <div className="home-skills">
-      <h1 className={!isLoaded ? "skills-h1-fade-in" : ""}>
+      <p className={!isLoaded ? "skills-p-fade-in" : ""}>
         Here's what I can do:
-      </h1>
+      </p>
       <div
         className={
           !isLoaded ? "home-skill react left-center-react" : "home-skill react"

@@ -10,7 +10,7 @@ export default function HomeProjectsFooter(props) {
           : "home-projects-footer"
       }
     >
-      <h2 className="projects-subtitle">And so much more!</h2>
+      <p className="projects-subtitle">And so much more!</p>
       <p className="projects-invitation">
         Please visit the Projects page on the navigation bar or check out my
         GitHub to see what else I have been up to!
