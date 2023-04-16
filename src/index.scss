@@ -5,12 +5,12 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
-  color: #0f0f0f;
+  color: #fcfcfc;
   scroll-behavior: smooth;
 }
 
 body {
-  background-color: #fcfcfc;
+  background-color: #141414;
 }
 
 .main {
@@ -23,6 +23,7 @@ body {
 nav {
   display: flex;
   grid-area: navbar;
+  background-color: #000000;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
