@@ -18,7 +18,7 @@ export default function Navbar({ loaded }) {
         }
       >
         <a href="./">Home</a>
-        <a href="./#/about">About me</a>
+        <a href="./#/about">About</a>
         <a href="./#/projects">Projects</a>
       </div>
       <div className="navbar-img">
