@@ -1,5 +1,6 @@
 import React from "react";
 import { sendForm } from "@emailjs/browser";
+import "../contactform.scss";
 
 export default function ContactForm() {
   const [toSend, setToSend] = React.useState({
