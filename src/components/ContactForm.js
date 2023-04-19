@@ -41,6 +41,7 @@ export default function ContactForm() {
           id="name"
           name="from_name"
           value={toSend.from_name}
+          required="true"
           onChange={handleChange}
         />
         <label htmlFor="email">E-mail address</label>
@@ -49,13 +50,16 @@ export default function ContactForm() {
           id="email"
           name="from_email"
           value={toSend.from_email}
+          required="true"
           onChange={handleChange}
+          minLength={6}
         />
         <label htmlFor="message">Message</label>
         <textarea
           name="message"
           id="message"
           value={toSend.message}
+          required="true"
           onChange={handleChange}
         />
         <input type="submit" value="Send" />
