@@ -8,7 +8,7 @@ import Title from "./components/Title";
 import ContactForm from "./components/ContactForm";
 
 function App(props) {
-  setTimeout(() => localStorage.setItem("loaded", 1), 20000);
+  setTimeout(() => localStorage.setItem("loaded", 1), 1000);
   return (
     <div className="main">
       <Navbar />
