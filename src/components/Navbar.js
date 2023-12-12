@@ -41,7 +41,7 @@ export default function Navbar({ loaded }) {
           </button>
         </Link>
         <a
-          href="https://github.com/kizwolak"
+          href="https://www.linkedin.com/in/krzysztof-zwolak-a6875a18a/"
           className={!isLoaded ? "img-bounce-3" : ""}
         >
           <img src="./images/iconmonstr-linkedin-3.svg" alt="LinkedIn" />
