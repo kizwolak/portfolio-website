@@ -16,25 +16,33 @@ export default function AboutMe(props) {
       <p className="about-header">Nice to meet you!</p>
       <p className="about-desc">
         My name is Krzysztof and I began my coding journey with JavaScript
-        around 1 year ago. Seeing the results of my work in the DOM and being
+        around 3 years ago. Seeing the results of my work in the DOM and being
         proud of what I learned made me fall in love with coding. After mutliple
-        days of studying for 12 hours, I finally feel confident enough to send
+        days of studying for 12 hours, I finally felt confident enough to send
         résumés 😄.
         <br />
         <br />
-        The possibilities of web development are incredible, which is why I have
-        also recently started learning the back-end to be able to create
-        amazing, fully-fledged apps. I simply love learning about web
-        development and I hope I will be able to show my passion to you.
+        My only commercial experience so far is in SQL and C#, but I've learnt so much
+        about web development and computer science as a whole. 
+        I feel like I found my dream career and I would love to be able to continue
+        working hard on growing as a developer and as a worker.
+        <br />
+        <br />
+        I'm looking for a team where I can make a difference. I'd like to be able to
+        help many users to enjoy a continuously improved experience using 
+        the best technology. I'm an easygoing and reliable person - I'm sure I'll fit in!
       </p>
       <div className="about-skills">
         <h1>My skills</h1>
         <div className="about-coding-skils">
           <h2>Webdev skills</h2>
           <ul>
+            <li>HTML + CSS/Sass</li>     
             <li>JavaScript</li>
             <li>React</li>
-            <li>HTML + CSS/Sass</li>
+            <li>Express</li>       
+            <li>C#</li>
+            <li>SQL</li>
             <li>Git (moving the HEAD, merging, branching and more) + GitHub</li>
             <li>Knowledge of accessibility practices</li>
             <li>Data structures and algorithms</li>
@@ -53,8 +61,7 @@ export default function AboutMe(props) {
             </li>
             <li>Experience with marketing as a freelancer</li>
             <li>
-              Native Polish, excellent command of English, advanced French and
-              intermediate Spanish
+              Native Polish, excellent command of English, advanced French and Spanish
             </li>
             <li>Strong group working skills</li>
           </ul>
