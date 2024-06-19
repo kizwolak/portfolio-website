@@ -16,7 +16,7 @@ export default function AboutMe(props) {
       <p className="about-header">Nice to meet you!</p>
       <p className="about-desc">
         My name is Krzysztof and I began my coding journey with JavaScript
-        around 3 years ago. Seeing the results of my work in the DOM and being
+        over 2 years ago. Seeing the results of my work in the DOM and being
         proud of what I learned made me fall in love with coding. After mutliple
         days of studying for 12 hours, I finally felt confident enough to send
         résumés 😄.
