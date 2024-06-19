@@ -10,6 +10,14 @@ export default function HomeSkills() {
       </p>
       <div
         className={
+          !isLoaded ? "home-skill javascript left-center-javascript" : "home-skill javascript"
+        }
+      >
+        <p>JavaScript</p>
+        <img src="./images/logo-javascript.svg" alt="JavaScript" />
+      </div>
+      <div
+        className={
           !isLoaded ? "home-skill react left-center-react" : "home-skill react"
         }
       >
@@ -18,39 +26,29 @@ export default function HomeSkills() {
       </div>
       <div
         className={
-          !isLoaded
-            ? "home-skill javascript left-center-javascript"
-            : "home-skill javascript"
+          !isLoaded ? "home-skill express left-center-express" : "home-skill express00"
         }
       >
-        <p>JavaScript</p>
-        <img src="./images/logo-javascript.svg" alt="JavaScript" />
+        <p>Express</p>
+        <img src="./images/c-sharp.svg" alt="C#" />
       </div>
       <div
         className={
-          !isLoaded ? "home-skill sass left-center-sass" : "home-skill sass"
+          !isLoaded ? "home-skill csharp left-center-csharp" : "home-skill csharp"
         }
       >
-        <p>Sass</p>
-        <img src="./images/Sass.svg" alt="Sass" />
-      </div>
-      <div
-        className={
-          !isLoaded ? "home-skill api left-center-api" : "home-skill api"
-        }
-      >
-        <p>APIs</p>
-        <img src="./images/addon-extension-icon.svg" alt="API" />
+        <p>C#</p>
+        <img src="./images/c-sharp.svg" alt="SQL" />
       </div>
       <div
         className={
           !isLoaded
-            ? "home-skill testing left-center-testing"
-            : "home-skill testing"
+            ? "home-skill sql left-center-sql"
+            : "home-skill sql"
         }
       >
-        <p>Testing</p>
-        <img src="./images/list-signs-svgrepo-com.svg" alt="Testing" />
+        <p>SQL</p>
+        <img src="./images/sql.svg" alt="SQL" />
       </div>
     </div>
   );
