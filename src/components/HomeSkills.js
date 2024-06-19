@@ -26,11 +26,11 @@ export default function HomeSkills() {
       </div>
       <div
         className={
-          !isLoaded ? "home-skill express left-center-express" : "home-skill express00"
+          !isLoaded ? "home-skill express left-center-express" : "home-skill express"
         }
       >
         <p>Express</p>
-        <img src="./images/c-sharp.svg" alt="C#" />
+        <img src="./images/express.svg" alt="C#" />
       </div>
       <div
         className={

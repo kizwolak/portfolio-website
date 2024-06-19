@@ -71,7 +71,7 @@ export default function AboutMe(props) {
           <ul>
             <li>History</li>
             <li>Photography</li>
-            <li>Travel and world cultures</li>
+            <li>Travel and anthropology</li>
             <li>Cooking</li>
             <li>Skiing</li>
             <li>Football (or soccer, depending on who you ask!)</li>
