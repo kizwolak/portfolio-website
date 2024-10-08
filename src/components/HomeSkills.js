@@ -6,7 +6,7 @@ export default function HomeSkills() {
   return (
     <div className="home-skills">
       <p className={!isLoaded ? "skills-p-fade-in" : ""}>
-        Here's what I can do:
+        Here are some of my skills:
       </p>
       <div
         className={
@@ -38,7 +38,7 @@ export default function HomeSkills() {
         }
       >
         <p>C#</p>
-        <img src="./images/c-sharp.svg" alt="SQL" />
+        <img src="./images/c-sharp.svg" alt="C#" />
       </div>
       <div
         className={
