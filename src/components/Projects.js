@@ -154,7 +154,7 @@ export default function Projects() {
           <div className="project">
             <p className="project-title">Calculator</p>
             <p className="project-desc">
-              One of my first projects. It's very girly! It also supports
+              One of my first projects. It supports
               keyboard input for quicker calculations. <br />
               <a href="https://kizwolak.github.io/Calculator/">
                 Click here to check it out!
