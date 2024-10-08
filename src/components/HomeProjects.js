@@ -25,23 +25,23 @@ export default function HomeProjects() {
             <div className="blaze-track">
               <div className="slide">
                 <img src="./images/shopping.png" alt="Shop" />
-                <p className="slide-desc">A functional shop page!</p>
+                <p className="slide-desc">A functional shop page</p>
               </div>
               <div className="slide">
                 <img src="./images/battleships.png" alt="Shop" />
-                <p className="slide-desc">A battleship game!</p>
+                <p className="slide-desc">A battleship game</p>
               </div>
               <div className="slide">
                 <img src="./images/todolist.png" alt="Shop" />
-                <p className="slide-desc">A to-do list with localStorage!</p>
+                <p className="slide-desc">A to-do list with localStorage</p>
               </div>
               <div className="slide">
                 <img src="./images/doctor.png" alt="Shop" />
-                <p className="slide-desc">A doctor's website (a CSS flex)!</p>
+                <p className="slide-desc">A doctor's website</p>
               </div>
               <div className="slide">
                 <img src="./images/memegen.png" alt="Shop" />
-                <p className="slide-desc">A meme generator!</p>
+                <p className="slide-desc">A meme generator</p>
               </div>
             </div>
           </div>
