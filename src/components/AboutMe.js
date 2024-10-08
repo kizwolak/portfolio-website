@@ -25,7 +25,7 @@ export default function AboutMe(props) {
         My only commercial experience so far is in SQL and C#, but I've learnt so much
         about web development and computer science as a whole. 
         I feel like I found my dream career and I would love to be able to continue
-        working hard on growing as a developer and as a worker.
+        working hard on growing as a developer.
         <br />
         <br />
         I'm looking for a team where I can make a difference. I'd like to be able to
@@ -43,9 +43,8 @@ export default function AboutMe(props) {
             <li>Express</li>       
             <li>C#</li>
             <li>SQL</li>
-            <li>Git (moving the HEAD, merging, branching and more) + GitHub</li>
+            <li>Git + GitHub</li>
             <li>Knowledge of accessibility practices</li>
-            <li>Data structures and algorithms</li>
             <li>Testing and debugging</li>
             <li>Working with RESTful APIs, async functions and promises</li>
             <li>Linters and formatters (primarily ESLint and Prettier)</li>
