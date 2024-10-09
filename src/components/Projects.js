@@ -45,10 +45,13 @@ export default function Projects() {
           }
         >
           <div className="project">
-            <p className="project-title">The Big Shop</p>
+            <p className="project-title">The Luxurious Store</p>
             <p className="project-desc">
               A functional React shop with a working basket. I believe it may
-              give you a sensible chuckle! <br />
+              give you a sensible chuckle! I did not forget about CSS,
+              the design of this project is simply very opinionated -
+              who needs flashy colours and animations when
+              the goal of the website is to display goods and prices?<br />
               <a href="https://kizwolak.github.io/shopping-cart/">
                 Click here to check it out!
               </a>
