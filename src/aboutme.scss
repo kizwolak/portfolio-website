@@ -1,66 +1,137 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+.about-intro {
+  padding-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
 
-.about-me {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.about-copy h1 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.about-desc {
+  color: var(--text-secondary);
+  max-width: 34rem;
+  margin-bottom: 1rem;
+}
+
+.profile-panel {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.5rem;
+  background: var(--surface);
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  align-self: flex-start;
 }
 
 .profile-photo {
   border-radius: 50%;
-  width: 10rem;
-  height: 10rem;
-  margin-top: 12rem;
+  width: 4.5rem;
+  height: 4.5rem;
+  object-fit: cover;
 }
 
-.about-header {
-    font-size: 2.5rem;
-    text-align: center;
-    margin-top: 1.5rem;
-    margin-bottom: 1rem;
-}
-
-.about-desc {
-    margin: 0 2rem;
-    margin-top: 0.5em;
-    font-size: 1.1rem;
-}
-
-.about-skills {
-  margin: 2rem;
+.profile-fact {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 2em;
-
-  div {
-    width: 70%;
-  }
+  gap: 0.2rem;
 }
 
-ul {
-  width: 100;
+.profile-fact span {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+}
 
-  li {
-    font-size: 1.2rem;
-  }
+.profile-fact strong {
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.timeline-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.timeline-role {
+  font-weight: 500;
+  font-size: 1.05rem;
+}
+
+.timeline-dates {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  white-space: nowrap;
+}
+
+.timeline-company {
+  color: var(--accent);
+  font-size: 0.85rem;
+  margin: 0.15rem 0 0.75rem;
+}
+
+.timeline-bullets {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.timeline-bullets li {
+  color: var(--text-secondary);
+  font-size: 0.92rem;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.timeline-bullets li::before {
+  content: "-";
+  position: absolute;
+  left: 0;
+  color: var(--text-muted);
+}
+
+.skills-columns {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.skill-group-label {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin-bottom: 0.6rem;
 }
 
 @media (min-width: 700px) {
-  .about-header {
-    font-size: 6rem;
+  .about-intro {
+    padding-top: 4rem;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 3rem;
   }
 
-  .about-desc {
-    margin-top: 2rem;
-    padding: 0 10rem;
-    font-size: 1.4rem;
-    width: 60vw;
+  .about-copy {
+    flex: 1;
   }
 
-  .profile-photo {
-    width: 15rem;
-    height: 15rem;
-    margin-top: 14rem;
+  .profile-panel {
+    width: 16rem;
+    flex-shrink: 0;
+  }
+
+  .skills-columns {
+    grid-template-columns: 1fr 1fr;
   }
 }

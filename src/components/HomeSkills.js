@@ -1,55 +1,35 @@
 import React from "react";
-import "../homeskillsprojects.scss";
+
+const skillGroups = [
+  {
+    label: "languages",
+    skills: ["TypeScript", "Python", "JavaScript", "C#", "SQL"],
+  },
+  {
+    label: "cloud & ai",
+    skills: ["AWS", "Amazon Connect", "Amazon Lex", "Amazon Bedrock", "Lambda", "DynamoDB", "CloudWatch"],
+  },
+  {
+    label: "backend & tools",
+    skills: ["Node.js", "Express", ".NET", "REST APIs", "Docker", "Git", "GitHub Actions"],
+  },
+];
 
 export default function HomeSkills() {
-  const isLoaded = localStorage.getItem("loaded");
   return (
     <div className="home-skills">
-      <p className={!isLoaded ? "skills-p-fade-in" : ""}>
-        Here are some of my skills:
-      </p>
-      <div
-        className={
-          !isLoaded ? "home-skill javascript left-center-javascript" : "home-skill javascript"
-        }
-      >
-        <p>JavaScript</p>
-        <img src="./images/logo-javascript.svg" alt="JavaScript" />
-      </div>
-      <div
-        className={
-          !isLoaded ? "home-skill react left-center-react" : "home-skill react"
-        }
-      >
-        <p>React</p>
-        <img src="./images/React-icon.svg" alt="React" />
-      </div>
-      <div
-        className={
-          !isLoaded ? "home-skill express left-center-express" : "home-skill express"
-        }
-      >
-        <p>Express</p>
-        <img src="./images/express.svg" alt="C#" />
-      </div>
-      <div
-        className={
-          !isLoaded ? "home-skill csharp left-center-csharp" : "home-skill csharp"
-        }
-      >
-        <p>C#</p>
-        <img src="./images/c-sharp.svg" alt="C#" />
-      </div>
-      <div
-        className={
-          !isLoaded
-            ? "home-skill sql left-center-sql"
-            : "home-skill sql"
-        }
-      >
-        <p>SQL</p>
-        <img src="./images/sql.svg" alt="SQL" />
-      </div>
+      {skillGroups.map((group) => (
+        <div className="skill-group" key={group.label}>
+          <p className="skill-group-label mono">{group.label}</p>
+          <div className="tag-group">
+            {group.skills.map((skill) => (
+              <span className="tag" key={skill}>
+                {skill}
+              </span>
+            ))}
+          </div>
+        </div>
+      ))}
     </div>
   );
 }

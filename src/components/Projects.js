@@ -3,305 +3,135 @@ import "../projects.scss";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 
+const projects = [
+  {
+    title: "E-commerce cart",
+    category: "React",
+    desc: "A React storefront with cart state, quantity management and checkout totals.",
+    href: "https://kizwolak.github.io/shopping-cart/",
+  },
+  {
+    title: "This website",
+    category: "React",
+    desc: "Built with React and SCSS, developed mobile-first, with a light/dark theme persisted to localStorage.",
+    href: "https://github.com/kizwolak/portfolio-website",
+  },
+  {
+    title: "Weather app",
+    category: "Tools",
+    desc: "Looks up current weather and local time for a city, with a temperature-unit converter.",
+    href: "https://kizwolak.github.io/weather-app/dist/index.html/",
+  },
+  {
+    title: "To-do list",
+    category: "Tools",
+    desc: "A task manager backed by localStorage, with priority levels and expiry alerts.",
+    href: "https://kizwolak.github.io/To-do-list/dist/index.html",
+  },
+  {
+    title: "Calculator",
+    category: "Tools",
+    desc: "A calculator with full keyboard input support.",
+    href: "https://kizwolak.github.io/Calculator/",
+  },
+  {
+    title: "Binary search tree",
+    category: "Data structures",
+    desc: "Checks if a tree is balanced, finds min/max height and depth, and locates values.",
+    href: "https://github.com/kizwolak/binary-search-tree",
+  },
+  {
+    title: "Linked lists",
+    category: "Data structures",
+    desc: "Finds the index of a value, inserts nodes, and checks list membership.",
+    href: "https://github.com/kizwolak/linked-lists/blob/main/linkedLists.js",
+  },
+  {
+    title: "Node and Express basic site",
+    category: "Node + Express",
+    desc: "Parallel Node and Express implementations of the same site, built to compare the two.",
+    href: "https://github.com/kizwolak/basic-informational-site",
+  },
+  {
+    title: "Member App",
+    category: "Node + Express",
+    desc: "A CRUD application - a GUI for creating, updating and deleting records through a REST API.",
+    href: "https://github.com/kizwolak/member-app",
+  },
+  {
+    title: "JS testing practice",
+    category: "Testing",
+    desc: "Jest tests covering a calculator and array-handling functions.",
+    href: "https://github.com/kizwolak/testing-practice",
+  },
+  {
+    title: "React testing practice",
+    category: "Testing",
+    desc: "Testing React components - input handling, async/promises, callbacks and multi-element assertions.",
+    href: "https://github.com/kizwolak/testing-practice",
+  },
+  {
+    title: "A doctor's website",
+    category: "Miscellaneous",
+    desc: "A fully responsive site for mobile, tablet and desktop, with a custom slider component.",
+    href: "https://kizwolak.github.io/Doctor-s-Website/",
+  },
+  {
+    title: "An image slider",
+    category: "Miscellaneous",
+    desc: "A hand-built JS image slider with no external dependencies.",
+    href: "https://github.com/kizwolak/image-slider",
+  },
+];
+
+const categories = ["All", ...Array.from(new Set(projects.map((p) => p.category)))];
+
 export default function Projects() {
-  const [reactClick, setReactClick] = React.useState(true);
-  const [gamesClick, setGamesClick] = React.useState(true);
-  const [toolsClick, setToolsClick] = React.useState(true);
-  const [dataClick, setDataClick] = React.useState(true);
-  const [nodeClick, setNodeClick] = React.useState(true);
-  const [testClick, setTestClick] = React.useState(true);
-  const [miscelClick, setMiscelClick] = React.useState(true);
-  const handleReactClick = () => {
-    setReactClick((reactClick) => !reactClick);
-  };
-  const handleGamesClick = () => {
-    setGamesClick((gamesClick) => !gamesClick);
-  };
-  const handleToolsClick = () => {
-    setToolsClick((toolsClick) => !toolsClick);
-  };
-  const handleDataClick = () => {
-    setDataClick((dataClick) => !dataClick);
-  };
-  const handleNodeClick = () => {
-    setNodeClick((nodeClick) => !nodeClick);
-  };
-  const handleTestClick = () => {
-    setTestClick((testClick) => !testClick);
-  };
-  const handleMiscelClick = () => {
-    setMiscelClick((miscelClick) => !miscelClick);
-  };
+  const [activeCategory, setActiveCategory] = React.useState("All");
+
+  const visible =
+    activeCategory === "All"
+      ? projects
+      : projects.filter((p) => p.category === activeCategory);
 
   return (
     <div className="projects">
       <Navbar />
-      <p className="projects-header">Here are some of my projects!</p>
-      <div className="project-group">
-        <p onClick={handleReactClick}>React</p>
-        <div
-          className={
-            reactClick ? "hidden-project-group" : "project-group-display"
-          }
-        >
-          <div className="project">
-            <p className="project-title">The Luxurious Store</p>
-            <p className="project-desc">
-              A functional React shop with a working basket. I believe it may
-              give you a sensible chuckle! I did not forget about CSS,
-              the design of this project is simply very opinionated -
-              who needs flashy colours and animations when
-              the goal of the website is to display goods and prices?<br />
-              <a href="https://kizwolak.github.io/shopping-cart/">
-                Click here to check it out!
-              </a>
-            </p>
+      <div className="page">
+        <section className="section projects-intro">
+          <h1>Projects</h1>
+          <p className="projects-disclaimer">
+            I'm always working on something new, so this list isn't final.
+            Check my{" "}
+            <a href="https://github.com/kizwolak">GitHub</a> for the rest.
+          </p>
+          <div className="category-filter mono">
+            {categories.map((category) => (
+              <button
+                key={category}
+                type="button"
+                className={category === activeCategory ? "active" : ""}
+                onClick={() => setActiveCategory(category)}
+              >
+                {category}
+              </button>
+            ))}
           </div>
-          <div className="project">
-            <p className="project-title">This website</p>
-            <p className="project-desc">
-              This website has been fully built with React! It also contains
-              some pretty cool (S)CSS effects, as well as some localStorage
-              stuff to prevent the website from playing all the animations over
-              and over again even after the website has already been visited. It
-              is also the first website I have developed with a mobile-first
-              mindset. While the Doctor's Website works on mobiles, I learned
-              the hard way why it is best to develop for mobiles first. <br />{" "}
-              <a href="https://github.com/kizwolak/portfolio-website">
-                Check out the code here!
+        </section>
+        <section className="section project-list-section">
+          <div className="project-list">
+            {visible.map((project) => (
+              <a className="project-row" href={project.href} key={project.title}>
+                <div className="project-row-heading">
+                  <p className="project-row-title">{project.title}</p>
+                  <span className="tag mono">{project.category}</span>
+                </div>
+                <p className="project-row-desc">{project.desc}</p>
               </a>
-            </p>
+            ))}
           </div>
-          <div className="project">
-            <p className="project-title">A meme generator</p>
-            <p className="project-desc">
-              A silly little project I did to drill managing and updating state
-              in React. The text often doesn't fit the memes, but sometimes the
-              results can be quite funny. <br />
-              <a href="https://kizwolak.github.io/meme-generator/">
-                Click here to check it out!
-              </a>
-            </p>
-          </div>
-        </div>
+        </section>
       </div>
-      <div className="project-group">
-        <p onClick={handleGamesClick}>Games</p>
-        <div
-          className={
-            gamesClick ? "hidden-project-group" : "project-group-display"
-          }
-        >
-          <div className="project">
-            <p className="project-title">Battleships</p>
-            <p className="project-desc">
-              A battleships game. Put your ships on the board and click away!
-              It's got tons of cool features, like confirming your selection and
-              a futuristic design. <br />
-              <a href="https://kizwolak.github.io/battleships/dist/index.html">
-                Click here to check it out!
-              </a>
-            </p>
-          </div>
-          <div className="project">
-            <p className="project-title">Tic-tac-toe</p>
-            <p className="project-desc">
-              Tic-tac-toe. Modern, sleek and fast. Give it a go when you need to
-              solve a personal problem with your best friend! <br />
-              <a href="https://kizwolak.github.io/Tic-tac-toe">
-                Click here to check it out!
-              </a>
-            </p>
-          </div>
-          <div className="project">
-            <p className="project-title">Memory card</p>
-            <p className="project-desc">
-              A React memory card game featuring Chelsea legends. Can you get
-              the high score? <br />
-              <a href="https://kizwolak.github.io/memory-card">
-                Click here to find out!
-              </a>
-            </p>
-          </div>
-        </div>
-      </div>
-      <div className="project-group">
-        <p onClick={handleToolsClick}>Tools and apps</p>
-        <div
-          className={
-            toolsClick ? "hidden-project-group" : "project-group-display"
-          }
-        >
-          <div className="project">
-            <p className="project-title">Weather app</p>
-            <p className="project-desc">
-              A weather app with a handy temperature converter, background
-              images that show a photo of the looked-up city and even local
-              time. Useful! <br />
-              <a href="https://kizwolak.github.io/weather-app/dist/index.html/">
-                Click here to check it out!
-              </a>
-            </p>
-          </div>
-          <div className="project">
-            <p className="project-title">To-do list</p>
-            <p className="project-desc">
-              A to-do list that works with localStorage. You can give tasks
-              priority, and the app also alerts the user when a task has
-              expired. <br />
-              <a href="https://kizwolak.github.io/To-do-list/dist/index.html">
-                Click here to check it out!
-              </a>
-            </p>
-          </div>
-          <div className="project">
-            <p className="project-title">Calculator</p>
-            <p className="project-desc">
-              One of my first projects. It supports
-              keyboard input for quicker calculations. <br />
-              <a href="https://kizwolak.github.io/Calculator/">
-                Click here to check it out!
-              </a>
-            </p>
-          </div>
-        </div>
-      </div>
-      <div className="project-group">
-        <p onClick={handleDataClick}>Data structures</p>
-        <div
-          className={
-            dataClick ? "hidden-project-group" : "project-group-display"
-          }
-        >
-          <div className="project">
-            <p className="project-title">Binary search tree</p>
-            <p className="project-desc">
-              A binary search tree project that checks if a tree is balanced,
-              finds its min and max height, depth, finds the location of a value
-              and more.
-              <br />
-              <a href="https://github.com/kizwolak/binary-search-tree">
-                Click here to check it out!
-              </a>
-            </p>
-          </div>
-          <div className="project">
-            <p className="project-title">Linked lists</p>
-            <p className="project-desc">
-              A linked list project that finds the index of a number, adds a
-              value to the list, checks if a list contains a value and more.
-              <br />
-              <a href="https://github.com/kizwolak/linked-lists/blob/main/linkedLists.js">
-                Click here to check it out!
-              </a>
-            </p>
-          </div>
-        </div>
-      </div>
-      <div className="project-group">
-        <p onClick={handleNodeClick}>Node + Express</p>
-        <div
-          className={
-            nodeClick ? "hidden-project-group" : "project-group-display"
-          }
-        >
-          <div className="project">
-            <p className="project-title">Node and Express basic site</p>
-            <p className="project-desc">
-              I set up some basic websites in Node and Express to learn more
-              about how they work. This is just the beginning of the new journey
-              into the back-end!
-              <br />
-              <a href="https://github.com/kizwolak/basic-informational-site">
-                Click here to check out the Node version!
-              </a>
-              <br />
-              <a href="https://github.com/kizwolak/express-basic-informational-site">
-                Click here to check out the Express version!
-              </a>
-            </p>
-          </div>
-          <div className="project">
-            <p className="project-title">Member App</p>
-            <p className="project-desc">
-              This project is the first time I have worked on a CRUD
-              application. The GUI handles adding members to the API, but it is
-              also possible to PUT and DELETE objects.
-              <br />
-              <a href="https://github.com/kizwolak/member-app">
-                Click here to check it out!
-              </a>
-            </p>
-          </div>
-        </div>
-      </div>
-      <div className="project-group">
-        <p onClick={handleTestClick}>Testing</p>
-        <div
-          className={
-            testClick ? "hidden-project-group" : "project-group-display"
-          }
-        >
-          <div className="project">
-            <p className="project-title">JS testing practice</p>
-            <p className="project-desc">
-              Jest testing of some basic JS functions. Tests that check if a
-              calculator works, if the right array values are returned and more.
-              <br />
-              <a href="https://github.com/kizwolak/testing-practice">
-                Click here to check it out!
-              </a>
-            </p>
-          </div>
-          <div className="project">
-            <p className="project-title">React testing practice</p>
-            <p className="project-desc">
-              Testing components with React. Input, async/promises, callback
-              functions and testing multiple elements are some of the topics I
-              touched.
-              <br />
-              <a href="https://github.com/kizwolak/testing-practice">
-                Click here to check it out!
-              </a>
-            </p>
-          </div>
-        </div>
-      </div>
-      <div className="project-group">
-        <p onClick={handleMiscelClick}>Miscellaneous</p>
-        <div
-          className={
-            miscelClick ? "hidden-project-group" : "project-group-display"
-          }
-        >
-          <div className="project">
-            <p className="project-title">A doctor's website</p>
-            <p className="project-desc">
-              A fully responsive website designed for mobiles, tablets and
-              computers. The slider I used is blaze-slider, which is the fastest
-              slider ever. I also use it on this website's homepage! <br />
-              <a href="https://kizwolak.github.io/Doctor-s-Website/">
-                Click here to check it out!
-              </a>
-            </p>
-          </div>
-          <div className="project">
-            <p className="project-title">An image slider</p>
-            <p className="project-desc">
-              My own JS image slider. Works well! Make sure to add your images
-              to the code if you'd like to try it out. <br />
-              <a href="https://github.com/kizwolak/image-slider">
-                Click here to check it out!
-              </a>
-            </p>
-          </div>
-        </div>
-      </div>
-      <p className="project-info">
-        Please keep in mind that I am always working on something new, so this
-        list is not final. If you'd like to see what else I've been up to, visit
-        my GitHub!
-      </p>
       <Footer />
     </div>
   );

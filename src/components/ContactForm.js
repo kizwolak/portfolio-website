@@ -22,60 +22,50 @@ export default function ContactForm() {
       form.current,
       "EOQEGGgqwdDnJBH77"
     )
-      .then((response) => {
+      .then(() => {
         setEmailSuccess(true);
-        console.log("SUCCESS!", response.status, response.text);
       })
-      .catch((err) => {
+      .catch(() => {
         setEmailFail(true);
-        console.log("FAILED...", err);
       });
   };
   return (
     <div className="contact-form">
-      <h3>Or maybe now? Feel free to send me a message here!</h3>
+      <p className="contact-desc">
+        Get in touch if you'd like to work together or just say hello.
+      </p>
       <form onSubmit={sendEmail} ref={form}>
-        <label htmlFor="name">Name</label>
+        <label htmlFor="name" className="mono">name</label>
         <input
           type="text"
           id="name"
           name="from_name"
           value={toSend.from_name}
-          required="true"
+          required
           onChange={handleChange}
         />
-        <label htmlFor="email">E-mail address</label>
+        <label htmlFor="email" className="mono">email</label>
         <input
           type="email"
           id="email"
           name="from_email"
           value={toSend.from_email}
-          required="true"
+          required
           onChange={handleChange}
           minLength={6}
         />
-        <label htmlFor="message">Message</label>
+        <label htmlFor="message" className="mono">message</label>
         <textarea
           name="message"
           id="message"
           value={toSend.message}
-          required="true"
+          required
           onChange={handleChange}
         />
-        <input type="submit" value="Send" />
+        <button type="submit">Send message</button>
       </form>
-      <p
-        className="emailResult"
-        style={{ display: emailSuccess ? "block" : "none" }}
-      >
-        Message sent!
-      </p>
-      <p
-        className="emailResult"
-        style={{ display: emailFail ? "block" : "none" }}
-      >
-        Sending failed...
-      </p>
+      {emailSuccess && <p className="email-result">Message sent.</p>}
+      {emailFail && <p className="email-result">Sending failed - try again.</p>}
     </div>
   );
 }

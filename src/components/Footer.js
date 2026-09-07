@@ -1,12 +1,12 @@
 import React from "react";
 
 export default function Footer() {
-  const isLoaded = localStorage.getItem("loaded");
   return (
     <footer>
-      <p className={!isLoaded ? "footer-fade-in" : ""}>
-        Krzysztof Zwolak, 2023
-      </p>
+      <div className="footer-inner mono">
+        <span>Krzysztof Zwolak, 2026</span>
+        <span>Wrocław, Poland</span>
+      </div>
     </footer>
   );
 }

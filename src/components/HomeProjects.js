@@ -1,51 +1,43 @@
 import React from "react";
-import { useBlazeSlider } from "react-blaze-slider";
-import "blaze-slider/dist/blaze.css";
-import "../homeskillsprojects.scss";
+
+const featured = [
+  {
+    title: "E-commerce cart",
+    desc: "A React storefront with cart state, quantity management and checkout totals.",
+    tag: "React",
+    href: "https://kizwolak.github.io/shopping-cart/",
+  },
+  {
+    title: "Member App",
+    desc: "A CRUD application for creating, updating and deleting records through a REST API.",
+    tag: "Node + Express",
+    href: "https://github.com/kizwolak/member-app",
+  },
+  {
+    title: "Weather app",
+    desc: "Looks up current weather and local time for a city, with a temperature-unit converter.",
+    tag: "Tools",
+    href: "https://kizwolak.github.io/weather-app/dist/index.html/",
+  },
+  {
+    title: "Binary search tree",
+    desc: "Checks balance, finds min/max height and depth, and locates values.",
+    tag: "Data structures",
+    href: "https://github.com/kizwolak/binary-search-tree",
+  },
+];
 
 export default function HomeProjects() {
-  const ref = useBlazeSlider({
-    all: {
-      enableAutoplay: true,
-      stopAutoplayOnInteraction: false,
-      autoplayInterval: 7000,
-    },
-  });
-  const isLoaded = localStorage.getItem("loaded");
   return (
-    <div
-      className={
-        !isLoaded ? "home-projects home-projects-fade-in" : "home-projects"
-      }
-    >
-      <p>And here are some projects I've made:</p>
-      <div className="blaze-slider" ref={ref}>
-        <div className="blaze-container">
-          <div className="blaze-track-container">
-            <div className="blaze-track">
-              <div className="slide">
-                <img src="./images/shopping.png" alt="Shop" />
-                <p className="slide-desc">A functional shop page</p>
-              </div>
-              <div className="slide">
-                <img src="./images/battleships.png" alt="Shop" />
-                <p className="slide-desc">A battleship game</p>
-              </div>
-              <div className="slide">
-                <img src="./images/todolist.png" alt="Shop" />
-                <p className="slide-desc">A to-do list with localStorage</p>
-              </div>
-              <div className="slide">
-                <img src="./images/doctor.png" alt="Shop" />
-                <p className="slide-desc">A doctor's website</p>
-              </div>
-              <div className="slide">
-                <img src="./images/memegen.png" alt="Shop" />
-                <p className="slide-desc">A meme generator</p>
-              </div>
-            </div>
-          </div>
-        </div>
+    <div className="home-projects">
+      <div className="project-grid">
+        {featured.map((project) => (
+          <a className="project-card" href={project.href} key={project.title}>
+            <span className="tag mono">{project.tag}</span>
+            <p className="project-card-title">{project.title}</p>
+            <p className="project-card-desc">{project.desc}</p>
+          </a>
+        ))}
       </div>
     </div>
   );

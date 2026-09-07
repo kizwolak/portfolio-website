@@ -3,16 +3,19 @@ import { HashRouter, Routes, Route } from "react-router-dom";
 import App from "./App";
 import AboutMe from "./components/AboutMe";
 import Projects from "./components/Projects";
+import { ThemeProvider } from "./ThemeContext";
 
 const RouteSwitch = () => {
   return (
-    <HashRouter hashType="hashbang">
-      <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="/about" element={<AboutMe />} />
-        <Route path="/projects" element={<Projects />} />
-      </Routes>
-    </HashRouter>
+    <ThemeProvider>
+      <HashRouter hashType="hashbang">
+        <Routes>
+          <Route path="/" element={<App />} />
+          <Route path="/about" element={<AboutMe />} />
+          <Route path="/projects" element={<Projects />} />
+        </Routes>
+      </HashRouter>
+    </ThemeProvider>
   );
 };
 

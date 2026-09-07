@@ -1,21 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-export default function HomeProjectsFooter(props) {
-  const isLoaded = localStorage.getItem("loaded");
+export default function HomeProjectsFooter() {
   return (
-    <div
-      className={
-        !isLoaded
-          ? "home-projects-footer home-projects-footer-fade-in"
-          : "home-projects-footer"
-      }
-    >
-      <p className="projects-subtitle">And that's not all!</p>
-      <p className="projects-invitation">
-        Please visit the Projects page on the navigation bar or check out my
-        GitHub to see what else I have been up to!
-      </p>
-      <h3>Hope to hear from you soon!</h3>
-    </div>
+    <p className="projects-invitation">
+      That's a small sample - see the full list on the{" "}
+      <Link to="/projects">projects page</Link>, or check my{" "}
+      <a href="https://github.com/kizwolak">GitHub</a>.
+    </p>
   );
 }

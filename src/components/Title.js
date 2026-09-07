@@ -1,84 +1,34 @@
 import React from "react";
 
 export default function Title() {
-  const [time, setTime] = React.useState(new Date().getHours());
-  React.useEffect(() => {
-    const newTime = new Date().getHours();
-    setTime(newTime);
-  }, []);
-  const isLoaded = localStorage.getItem("loaded");
-  const greeting = () => {
-    if (time >= 5 && time < 12) {
-      return (
-        <p
-          className={
-            !isLoaded
-              ? "title-greeting title-greeting-fade-in"
-              : "title-greeting"
-          }
-        >
-          Good morning!
-        </p>
-      );
-    } else if (time >= 12 && time < 17) {
-      return (
-        <p
-          className={
-            !isLoaded
-              ? "title-greeting title-greeting-fade-in"
-              : "title-greeting"
-          }
-        >
-          Good afternoon!
-        </p>
-      );
-    } else if (time >= 17 && time < 22) {
-      return (
-        <p
-          className={
-            !isLoaded
-              ? "title-greeting title-greeting-fade-in"
-              : "title-greeting"
-          }
-        >
-          Good evening!
-        </p>
-      );
-    } else if (time >= 22 && time < 5) {
-      console.log(true);
-      return (
-        <p
-          className={
-            !isLoaded
-              ? "title-greeting title-greeting-fade-in"
-              : "title-greeting"
-          }
-        >
-          Good night!
-        </p>
-      );
-    } else {
-      return (
-        <p
-          className={
-            !isLoaded
-              ? "title-greeting title-greeting-fade-in"
-              : "title-greeting"
-          }
-        >
-          Hello!
-        </p>
-      );
-    }
-  };
-
   return (
-    <section className="title">
-      {greeting()}
-
-      <p className={!isLoaded ? "subtitle subtitle-fade-in" : "subtitle"}>
-        My name is Krzysztof and I'm a software engineer.
-      </p>
+    <section className="hero page">
+      <div className="hero-copy">
+        <p className="hero-eyebrow mono">software engineer / amazon connect developer</p>
+        <h1 className="hero-name">Krzysztof Zwolak</h1>
+        <p className="hero-desc">
+          I build production software, cloud-based customer systems and
+          backend solutions - currently developing Amazon Connect contact
+          centre experiences at Deloitte.
+        </p>
+      </div>
+      <div className="terminal" aria-label="Quick facts, shown as a terminal session">
+        <div className="terminal-bar">
+          <span className="dot dot-red" />
+          <span className="dot dot-amber" />
+          <span className="dot dot-green" />
+          <span className="terminal-path mono">krzysztof@dev ~</span>
+        </div>
+        <div className="terminal-body mono">
+          <p><span className="prompt">$</span> whoami</p>
+          <p className="flair">amazon-connect-developer @ deloitte</p>
+          <p><span className="prompt">$</span> stack --list</p>
+          <p>typescript, python, c#, sql</p>
+          <p>aws, amazon-connect, lex, bedrock</p>
+          <p><span className="prompt">$</span> location</p>
+          <p>wrocław, poland</p>
+        </div>
+      </div>
     </section>
   );
 }
